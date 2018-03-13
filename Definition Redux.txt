@@ -1,0 +1,15 @@
+Khái niệm redux
+
+1/ Action Types là dùng để xác định type của 1 action nào đó.
+
+2/ Action Creators
+
+    - Action Creators sẽ trả về một object với type và payload.
+    - Type: là 1 trong số những type đc định nghĩa trong action types.
+    - Payload: có thể là bất cứ thứ gì, nó được sử dụng để thay đổi global state của apps.
+
+3/ Reducer:
+
+    - Làm nhiệm vụ canh chừng nếu có bất cứ action nào được gọi và update global state.
+    - Nó nhận vào type và payload action trả về, và từ đó biến state cũ thành state mới.
+    - Lưu ý rằng thay vì thay đổi state trước đó thì chúng ta sẽ trả về một object state mới, state là immutable.
